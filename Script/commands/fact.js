@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "fact",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "a𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+	credits: "Sakib Ai Bot",
 	description: "random facts",
 	commandCategory: "...",
 	cooldowns: 5
