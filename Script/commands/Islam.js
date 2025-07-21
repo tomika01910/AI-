@@ -1,12 +1,13 @@
-/** I am doing this coding with a lot of difficulty, please don't post it yourself¯\_(ツ)_/¯ **/
+/** Custom coded by Sa Kib AI 🖤, নিজের ছাড়া অন্য কোথাও শেয়ার করো না 😉 **/
+
 module.exports.config = {
   name: "islam",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Islamick Chat",
-  description: "prefix VEDIO",
-  commandCategory: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
-  usages: "love10 vedio",
+  credits: "Sa Kib AI 🖤",
+  description: "Islamic video send kare Sa Kib style 🖤",
+  commandCategory: "Sa Kib AI 🖤",
+  usages: "islam",
   cooldowns: 5,
   dependencies: {
     "request":"",
@@ -19,9 +20,15 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["•┄┅════❁🌺❁════┅┄•\n\nআসসালামু আলাইকুম-!!🖤💫প্রিয় ভাই ও বন - তুমাদের জন্য নিয়ে আসলাম আমি ইসলামিক ভিডিও \n\n•┄┅════❁🌺❁════┅┄•"];
-  var know = hi[Math.floor(Math.random() * hi.length)];
-  var link = [
+
+var messageList = [
+"আসসালামু আলাইকুম ভাইজান 🌸 Sa Kib AI 🖤 থেকে ইসলামিক ভিডিও আপনার জন্য ✨",
+"আলহামদুলিল্লাহ 🖤 Sa Kib AI নিয়ে আসলো ইসলামিক ভিডিও 🎁",
+"ইসলামিক vibes 🖤 Powered by Sa Kib AI ✨"
+];
+var msg = messageList[Math.floor(Math.random() * messageList.length)];
+
+var links = [
 "https://drive.google.com/uc?id=1Y5O3qRzxt-MFR4vVhz0QsMwHQmr-34iH",
 "https://drive.google.com/uc?id=1YDyNrN-rnzsboFmYm8Q5-FhzoJD9WV3O",
 "https://drive.google.com/uc?id=1XzgEzopoYBfuDzPsml5-RiRnItXVx4zW",
@@ -31,10 +38,9 @@ const fs = global.nodemodule["fs-extra"];
 "https://drive.google.com/uc?id=1YSQCTVhrHTNl6B9xSBCQ7frBJ3bp_KoA",
 "https://drive.google.com/uc?id=1Yc9Rwwdpqha1AWeEb5BXV-goFbag0441",
 "https://drive.google.com/uc?id=1YcwtkC5wRbbHsAFuEQYQuwQsH4-ZiBS8",
-"https://drive.google.com/uc?id=1YhfyPl8oGmsIAIOjWQyzQYkDdZUPSalo",
-
+"https://drive.google.com/uc?id=1YhfyPl8oGmsIAIOjWQyzQYkDdZUPSalo"
 ];
-     var callback = () => api.sendMessage({body:` ${know} `,attachment: fs.createReadStream(__dirname + "/cache/15.mp4")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/15.mp4"));    
-      return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/15.mp4")).on("close",() => callback());
-   };
- 
+
+var callback = () => api.sendMessage({body:`${msg}`,attachment: fs.createReadStream(__dirname + "/cache/islamic.mp4")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/islamic.mp4"));
+return request(encodeURI(links[Math.floor(Math.random() * links.length)])).pipe(fs.createWriteStream(__dirname+"/cache/islamic.mp4")).on("close",() => callback());
+};
