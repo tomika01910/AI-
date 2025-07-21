@@ -38,7 +38,7 @@ global.countRestart = global.countRestart || 0;
 function startBot(message) {
     if (message) logger(message, "[ Starting ]");
 
-    const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "Cyber.js"], {
+    const child = spawn("node", ["--trace-warnings", "--async-stack-traces", "Sakib.js"], {
         cwd: __dirname,
         stdio: "inherit",
         shell: true
@@ -63,7 +63,7 @@ function startBot(message) {
 //========= Check update from Github =========//
 ////////////////////////////////////////////////
 
-axios.get("https://raw.githubusercontent.com/cyber-ullash/cyber-bot/main/data.json")
+axios.get("https://raw.githubusercontent.com/sakib-ai/sakib-bot/main/data.json")
     .then((res) => {
         logger(res.data.name, "[ NAME ]");
         logger(`Version: ${res.data.version}`, "[ VERSION ]");
