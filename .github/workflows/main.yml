@@ -1,3 +1,22 @@
+╭─〔 SAKIB AI HELP MENU 〕
+│
+├❏ .ai [প্রশ্ন] ➤ AI দিয়ে প্রশ্নের উত্তর
+├❏ .ytmp3 [link] ➤ ইউটিউব MP3 ডাউনলোড
+├❏ .meme ➤ মজার মেমে
+├❏ .quran [surah] ➤ ইসলামিক আয়াত
+├❏ .tts [text] ➤ টেক্সটকে ভয়েসে শুনো
+├❏ .weather [city] ➤ শহরের আবহাওয়া জানো
+├❏ .qr [text] ➤ QR কোড বানাও
+├❏ .owner ➤ বট মালিকের নাম
+├❏ .groupmenu ➤ গ্রুপ ম্যানেজ কমান্ড
+├❏ .game ➤ গেমস খেলো
+╰❏ .allcmds ➤ সব কমান্ডের লিস্ট
+
+
+---
+
+⚙️ DEPLOY WORKFLOW (GitHub Actions)
+
 name: Node.js CI
 
 on:
@@ -13,24 +32,63 @@ jobs:
     strategy:
       matrix:
         node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    # Step to check out the repository code
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    # Step to set up the specified Node.js version
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm install
 
-    # Step to install dependencies
-    - name: Install dependencies
-      run: npm install
+      - name: Start the bot
+        env:
+          PORT: 8080
+        run: npm start
 
-    # Step to run the bot with the correct port
-    - name: Start the bot
-      env:
-        PORT: 8080
-      run: npm start
+
+---
+
+☁️ DEPLOY OPTIONS (চাইলে এসবেও ডেপ্লয় করতে পারো)
+
+🚀 Heroku (Coming Soon)
+
+💻 Replit (Coming Soon)
+
+📦 Koyeb (Coming Soon)
+
+🛤️ Railway (Coming Soon)
+
+
+
+---
+
+📞 SUPPORT & CONTACT
+
+🔧 Issue বা বাগ রিপোর্ট করো
+
+🧿 Messenger: Coming Soon
+
+👥 Messenger Group: Coming Soon
+
+
+
+---
+
+🌟 SPECIAL THANKS
+
+🧠 সকল ইউজার যারা সাপোর্ট করছে
+
+👑 SA KIB (Founder of Sakib AI Bot)
+
+💡 যারা আইডিয়া দিয়ে হেল্প করছে
+
+
+
+---
+
+📅 RELEASE DATE: 21 July 2025
+
+⭐ Don’t forget to star the repo. JazakAllah Khair 💖
