@@ -1,116 +1,54 @@
-# If you want to move down the line, please use \n. e.g: tina\nULLASH.
-# After changed, you have to restart the bot to use.
-# Put the # character at the beginning of each sentence if you don't want the code to run those lines. 
-# Thanks to https://www.facebook.com/duong.than.net for translate to English!
+# 🩷 Sa Kib Official Messenger Bot Language Pack 🩷
 
-# Cyber.js 
+# Cyber.js Section
+Cyber.newVersionDetected=😎 ভাই আপনে ইউজ করতেছেন version %1,\nলেটেস্ট version হইলো %2 😎 আপডেট ঝাড়ি মারতেছে!
+Cyber.errorFormat=ভাই এই module টা ঝামেলা করছে, ফরম্যাটই ঠিক নাই 😂
+Cyber.nameExist=এই নাম আগে দখল করে রাখছে ভাই! অন্য নাম দাও ❌
+Cyber.notFoundLanguage=Module %1 তোর language বুঝে না ভাই!
+Cyber.notFoundPackage=%1 পাই নাই module %2 এর জন্য, install দিচ্ছি বস 🤖
+Cyber.cantInstallPackage=%1 install ফেইল করছে module %2 এর জন্য, কারনে: %3
+Cyber.loadedPackage=পুরা প্যাকেজ বসায় দিছি module %1 এর জন্য ✅
+Cyber.loadedConfig=Config বসানো শেষ module %1 ✅
+Cyber.cantLoadConfig=Config বসাইতে পারলাম না ভাই module %1, কারনে: %2
+Cyber.cantOnload=Setup চালাইতে গিয়া ঝামেলা হইছে module %1 এ! 😵‍💫
+Cyber.successLoadModule=Module %1 ইনস্টল হইছে! চলা শুরু ভাই ✅
+Cyber.failLoadModule=Module %1 ইনস্টলেই পারলাম না ভাই, error: %2
+Cyber.finishLoadModule=✅ %1 টা command আর %2 টা event রেডি হইছে একদম!
+Cyber.foundPathAppstate=✅ Sa Kib এর state পাওয়া গেছে ভাই!
+Cyber.notFoundPathAppstate=❌ appstate নাই ভাই, ফাইল ঠিক করো!
+Cyber.checkListGban=গ্লোবাল ব্যান লিস্ট চেকিং শুরু ভাই 😎
+Cyber.banDevice=তোর ডিভাইস Sa Kib Bot থেকে banned ভাই 🛑 unban লাগলে knock দে 👉 https://m.me/1RDiJzEJ9n
+Cyber.keyNotSameFormat=❌ ভাই Code ঠিক নাই, ৬ digit দিতে হইবে!
+Cyber.codeInputExpired=ভাই Code পুরান হইয়া গেছে বা ভুল দিছো!
+Cyber.unbanDeviceSuccess=✅ ভাই Unban হইছে! restart দে ফাটাই দে!
+Cyber.userBanned=তুই banned khaiso Sa Kib থেকে 🙅‍♂️ কারনে: %2\n Unban চাইলে knock কর 👉 https://m.me/1RDiJzEJ9n
+Cyber.finishCheckListGban=✅ Ban list চেক শেষ হইছে ভাই
+Cyber.handleListenError=Listen চলাকালীন গন্ডগোল হইছে ভাই, error: %1
+Cyber.warningSourceCode=ভাই Source Code edit detect করছি ❌ বট বন্ধ!
+Cyber.refreshListen=🎉 Listener Refreshed! চল চল!
+Cyber.successConnectDatabase=✅ Database connect হইছে ভাই!
+Cyber.failConnectDatabase=❌ Database fail করছে ভাই, error: %1
 
-Cyber.newVersionDetected=𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 %1, 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐢𝐬 %2. 
-Cyber.errorFormat=Malformed module!
-Cyber.nameExist=Module's name is similar to another module!
-Cyber.notFoundLanguage=Module %1 don't support your language
-Cyber.notFoundPackage=Can't find package %1 support for module %2, installing...
-Cyber.cantInstallPackage=Can't install package %1 for module %2, error: %3
-Cyber.loadedPackage=Installed whole package successfully for module %1
-Cyber.loadedConfig=Installed config successfully for module %1
-Cyber.cantLoadConfig=Can't install config of module %1, error: %2
-Cyber.cantOnload=Can't launch setup of module %1, error: %1
-Cyber.successLoadModule=Successfully installed module %1
-Cyber.failLoadModule=Can't install module %1, error: %2
-Cyber.finishLoadModule=Installed %1 module commands and %2 module events successfully 
-Cyber.foundPathAppstate=Ullashstate successfully
-Cyber.notFoundPathAppstate=Error can't find appstate file maybe file is malformed!
-Cyber.checkListGban=Checking global ban list...
-Cyber.banDevice=Your device have been banned from ULLASH, please contact to facebook m.me/100086680386976 to know more information or asking for unban key, if you already have unban key, please fill it below.
-Cyber.keyNotSameFormat=Wrong format, code must contain 6 number.
-Cyber.codeInputExpired=Your code is wrong or out of date.
-Cyber.unbanDeviceSuccess=Your device are unban now, please restart to use.
-Cyber.userBanned=You had been banned from ullash when %1 with reason: %2. Please contact to facebook m.me/100086680386976 to have more information!
-Cyber.finishCheckListGban=Checked global ban list
-Cyber.handleListenError=handleListene has occurred some unexpected errorr, error : %1
-Cyber.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED , STOP NOW!
-Cyber.refreshListen=Refreshed handleListener...
-Cyber.successConnectDatabase=Connected to database successfully!
-Cyber.failConnectDatabase=Failed to connect to database, error: %1
+# handleCommand.js Section
+handleCommand.userBanned=😈 ভাই Group এ বারবার পাগলামি করলে তো ban খাবি! knock 👉 https://m.me/1RDiJzEJ9n
+handleCommand.threadBanned=⛔️ Group ban করা হইছে ভাই, owner Sa Kib 👉 https://m.me/1RDiJzEJ9n
+handleCommand.commandNotExist=❌ ভাই ভুল কমান্ড দিছো, ঠিক করে দাও 😎 সাহায্য লাগলে knock 👉 https://m.me/1RDiJzEJ9n
+handleCommand.commandThreadBanned=এই group এ এই কমান্ড blocked 🛑
+handleCommand.commandUserBanned=এই কমান্ড তুই চালাইতে পারবি না ভাই ❌
+handleCommand.permssionNotEnough=ভাই Permission নাই 😂 শুধু Maharaja Sa Kib চালাতে পারবে!
+handleCommand.cantGetInfoThread=ভাই এই থ্রেডের ইনফো তে ঝামেলা হইছে: %1
+handleCommand.cantSetMessageReaction=React দিতে গিয়া সমস্যা হইছে ভাই 😞 error: %1
+handleCommand.executeCommand=[%1] চালাইলি %2 user: %3 thread: %4 time: %6ms
 
-# includes/listen.js
+# updater.js Section
+updater.latestVersion=✅ তুই লেটেস্ট version চালাইতাছোস ভাই Sa Kib এর 😎
+updater.newVersions=✅ %1 টা নতুন version ready, আপডেট হইতেছে!
+updater.updateSuccess=✅ Update success ভাই! restart দাও ফাটাই দাও
+updater.backupSuccess=✅ Backup ready ভাই %1 folder এ check কর
+updater.restartToApply=✅ Restart দিলে update লাগু হইবেক ভাই
 
-listen.startLoadEnvironment=Proceed to load the environment variable ...
-listen.loadedEnvironmentThread=Loaded thread environment variable successfully 
-listen.loadedEnvironmentUser=Loaded user environment variable successfully 
-listen.successLoadEnvironment=Loaded environment variable successfully 
-listen.failLoadEnvironment=Can't load environment variable, error: %1
+# utils/index.js Section
+utils.throwError=❌ ভাই error হইলে 👉 https://m.me/1RDiJzEJ9n knock দাও অথবা %1help %2 দেখে নাও 💙
 
-# includes/controller/currencies.js
-
-currencies.needObjectOrArray=Have to be an Array or an Object or maybe both
-currencies.needObject=Have to be an Object
-currencies.needNumber= Have to be an number
-
-# includes/controller/threads.js
-
-threads.needObjectOrArray=Have to be an Array or an Object or maybe both
-threads.needObject=Have to be an Object 
-
-# includes/controller/users.js
-
-users.needObjectOrArray=Have to be an Array or an Object or maybe both
-users.needObject=Have to be an Object
-
-# includes/handle/handleCommand.js
-
-handleCommand.userBanned=বক্স এ আবলামি করার অপরাধে তোরে  বেন করে দেওয়া হয়েছে-!!🚫
-handleCommand.threadBanned=Group Has Been Banned..!⛔️\nPlease Contact Owner Md Jahid Hasan Rajib  For Unban ⚠️
-handleCommand.commandNotExist=━━━━━━━✦━━━━━━━ \n    ✨ Assalamu Alaikum! 💖🌟\n━━━━━━━✦━━━━━━━\n\nThe command you gave is not valid here.\n\nCould it be— \n\n•—» %1  «—•\n\nCheck your input, please!\n━━━━━━━✦━━━━━━━".
-handleCommand.commandThreadBanned=Your thread is unable to use command "%1"
-handleCommand.commandUserBanned=You are unable to use command "%1"
-handleCommand.threadNotAllowNSFW=This Commnd Only use Andmi
-handleCommand.cantGetInfoThread=Can't get your thread's info, error: %1
-handleCommand.permssionNotEnough="%1"\n⎯⎯⎯⎯⎯⎯\n\n✨ Only Maharaja ULLASH is authorized to use this command.\n✨ You are just a subject, not allowed to use this 🙂🐸\n⎯⎯⎯⎯⎯⎯\n"%1"\n⎯⎯⎯⎯⎯⎯\n✨ শুধু মহারাজ উল্লাস এই কমান্ড ব্যবহার করতে পারবেন।\n✨ তুই তো কেবল প্রজা! তুই এই কমান্ড ব্যবহার করতে পারবি না 🙂🐸
-handleCommand.cantSetMessageReaction=Having some unexpected error at setMessageReaction, error: %1
-handleCommand.executeCommand=[ %1 ] Command used: %2 by user: %3 at thread: %4 | Args included: %5 | Processing time: %6ms
-handleCommand.commandError=Having some unexpected error when using command %1, error: %2
-
-# includes/handle/handleCommandEvent.js
-
-handleCommandEvent.moduleError=Having some unexpected error when using command %1, error: %2
-
-# includes/handle/handleCreateDatabase.js
-
-handleCreateDatabase.newThread=new thread: %1
-handleCreateDatabase.newUser=new user %1
-
-# includes/handle/handleEvent.js
-
-handleEvent.executeEvent=[ %1 ] Event was executed: %2 at thread: %3 | Processing time: %4ms
-handleEvent.eventError=Having some error when executing event %1, error: %12
-
-# includes/handle/handleReaction.js
-
-handleReaction.missingValue=Missing value to respond your problem
-handleReaction.executeError=Having some error when responding to your problem, error: %1
-
-# includes/handle/handleReply.js
-
-handleReply.missingValue=Missing value to respond your problem
-handleReply.executeError=Having some error when responding your problem, error: %1
-
-# includes/handle/handleSchedule.js
-
-handleSchedule.exectuteError=Having some error when schedule at module %1, error: %2
-
-# utils/index.js
-
-utils.throwError=ℹ️ [!] ɪғ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ɴᴏᴛ ᴡᴏʀᴋɪɴɢ, ᴘʟᴇᴀsᴇ ᴜsᴇ ᴀɴᴏᴛʜᴇʀ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ. %1help %2 ᴜsᴇ ғᴏʀ ᴍᴏʀᴇ ᴜsᴀɢᴇ💙🥺
-# updater.js
-
-updater.latestVersion=You are using the latest version
-updater.cantFindVersion=You are using an undefined version (%1), please check your package.json file again
-updater.newVersions=There are %1 new versions to update, starting to update...
-updater.updateSuccess=Update successfully%1
-updater.configChanged=The %1 has been changed, please check your config.json file again
-updater.installingPackages=Installing dependencies for bot...
-updater.installSuccess=Installed dependencies successfully, restart the bot to use the new version
-updater.backupSuccess=Successfully backed up changed files, see in the %1 folder
-updater.restartToApply=. Restart the bot to apply the new version
-updater.skipFile=There is a new version of the %1 file, but you have skipped this file during the update process with the comment %2 in this file
+# Final Line
+# Full power by Sa Kib Bot ✅ Enjoy your chatting 🥳
