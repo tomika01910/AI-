@@ -2,36 +2,38 @@ module.exports.config = {
 	name: "language",
 	version: "1.0.0",
 	hasPermssion: 2,
-	credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+	credits: "Sa Kib",
 	description: "Change BOT language",
 	commandCategory: "System",
-	usages: "[vi] [en]",
+	usages: "[bangla] [english]",
 	cooldowns: 5
 };
 
 module.exports.run = async ({ api, event, args }) => {
-    const { threadID, messageID } = event;
+	const { threadID, messageID } = event;
 
-    switch (args[0]) {
-        case "vietnames":
-        case "vi":
-            {
-                return api.sendMessage(`Ngôn ngữ đã được chuyển sang tiếng Việt`, threadID, () => global.config.language = "vi"); 
-            }
-            break;
-        
-        case "english":
-        case "en":
-            {
-                return api.sendMessage(`Language has been converted to English`, threadID, () => global.config.language = "en"); 
-            }
-            break;
-    
-        default:
-            {
-                return api.sendMessage("Syntax error, use : language [vi / en]", threadID, messageID);
-            }   
-            break; 
-            
-    }	
-}
+	switch (args[0]?.toLowerCase()) {
+		case "bangla":
+		case "bn":
+			return api.sendMessage(
+				"Basha Banglai Chole Asheche 🥰",
+				threadID,
+				() => global.config.language = "bn"
+			);
+
+		case "english":
+		case "en":
+			return api.sendMessage(
+				"Language switched to English 🟢",
+				threadID,
+				() => global.config.language = "en"
+			);
+
+		default:
+			return api.sendMessage(
+				"❌ Bhul Syntax!\nUse: language bangla / english",
+				threadID,
+				messageID
+			);
+	}
+};
